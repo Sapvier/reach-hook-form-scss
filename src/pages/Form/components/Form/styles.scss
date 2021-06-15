@@ -1,0 +1,59 @@
+@use '../../../../scss/abstracts/index' as *;
+
+form {
+  width: 80%;
+  height: 100%;
+  @include display-space;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 10px;
+
+  input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid $glass-border;
+
+    background: $glass;
+    border-radius: 4px;
+
+    &:focus {
+      box-shadow: 0 0 2px 1px slateblue;
+      outline: none;
+    }
+  }
+
+  select {
+    padding: 5px;
+
+    border: 1px solid $glass-border;
+    background: $glass;
+    border-radius: 4px;
+
+    &:focus {
+      box-shadow: 0 0 2px 1px slateblue;
+      outline: none;
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 6px;
+
+    border: 1px solid slateblue;
+    background-color: slateblue;
+    border-radius: 4px;
+    color: white;
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: $glass;
+      color: slateblue;
+    }
+  }
+
+  span {
+    color: darkred;
+    font-size: 12px;
+  }
+}

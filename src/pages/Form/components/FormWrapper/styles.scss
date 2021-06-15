@@ -1,0 +1,9 @@
+@import '../../../../scss/abstracts/index';
+
+.form-wrapper {
+  min-width: 350px;
+  min-height: 500px;
+  padding: 15px;
+  @include glass-container;
+  @include display-center
+}

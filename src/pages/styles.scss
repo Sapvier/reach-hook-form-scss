@@ -1,0 +1,10 @@
+@use './src/scss/abstracts' as *;
+
+.page-wrapper {
+  min-width: 100%;
+  min-height: 100vh;
+  @include display-center;
+
+  background: linear-gradient(45deg, $gradient-from, $gradient-to);
+
+}

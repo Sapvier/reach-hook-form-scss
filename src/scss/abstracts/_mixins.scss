@@ -1,0 +1,19 @@
+@use 'colors' as *;
+
+@mixin display-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin glass-container {
+  border: 1px solid $glass-border;
+  background: $glass;
+  border-radius: 4px;
+}
+
+@mixin display-space {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
